@@ -1,0 +1,186 @@
+:root {
+    /* These match the colors from the user-provided "Growth" image */
+    --pro-accent-blue: #3b82f6;
+    /* Blue in the top badge */
+    --pro-text-main: #1f2937;
+    /* Dark text */
+    --pro-text-muted: #6b7280;
+    /* Gray muted text */
+    --pro-border-light: #e5e7eb;
+    /* Feature icon border */
+    --pro-border-dashed: #d1d5db;
+    /* Revision/Delivery dashed border */
+    --pro-bg-card: #ffffff;
+    /* Card background */
+    --pro-bg-body: #f1f5f9;
+    /* Page background, optional */
+    --hover-color: #313543;
+    /* Hover color for buttons/links */
+}
+
+/* Essential Reset for layout */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--pro-bg-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.pro-card {
+    background: var(--pro-bg-card);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pro-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pro-plan-badge {
+    background: rgba(59, 130, 246, 0.08);
+    /* Matches light blue tint from reference */
+    color: var(--pro-accent-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.pro-price {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 15px 0 5px 0;
+    color: var(--pro-text-main);
+}
+
+.pro-price span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--pro-text-muted);
+}
+
+.pro-sub-text {
+    color: var(--pro-text-muted);
+    font-size: 0.95rem;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.pro-deliverables {
+    margin-top: 30px;
+}
+
+.pro-section-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--pro-text-main);
+    margin-bottom: 20px;
+}
+
+.pro-feature-item {
+    background: #f8f9fa;
+    /* Slight background for feature boxes */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.pro-icon-box {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    background: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--pro-border-light);
+}
+
+.pro-item-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--pro-text-main);
+}
+
+.pro-item-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--pro-text-muted);
+}
+
+.pro-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.pro-meta-box {
+    background: white;
+    border: 1.5px dashed var(--pro-border-dashed);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.pro-meta-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--pro-text-main);
+    margin-bottom: 4px;
+}
+
+.pro-meta-value {
+    font-size: 0.9rem;
+    color: var(--pro-text-muted);
+}
+
+.pro-btn-black {
+    display: block;
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: opacity 0.3s ease;
+}
+
+.pro-btn-black:hover {
+    background: var(--hover-color);
+    transform: translateY(-1px);
+}
+
+.pro-back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--pro-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+}

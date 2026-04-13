@@ -1,0 +1,9 @@
+.sm-feature {
+    border: 2px solid #1E3A8A;
+}
+
+.sm-feature:hover {
+    background-color: #1E3A8A;
+    color: var(--white);
+    transform: scale(1.05);
+}

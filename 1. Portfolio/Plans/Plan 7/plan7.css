@@ -1,0 +1,190 @@
+:root {
+    --prem-accent-blue: #3b82f6;
+    --prem-accent-gold: #f59e0b;
+    --prem-text-dark: #1f2937;
+    --prem-text-muted: #6b7280;
+    --prem-border-light: #e5e7eb;
+    --prem-border-dashed: #d1d5db;
+    --prem-btn-hover: #313543;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.prem-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.prem-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.prem-plan-badge {
+    background: rgba(59, 130, 246, 0.08);
+    color: var(--prem-accent-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.prem-value-badge {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: var(--prem-accent-gold);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.prem-price {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 15px 0 5px 0;
+    color: var(--prem-text-dark);
+}
+
+.prem-price span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--prem-text-muted);
+}
+
+.prem-sub-text {
+    color: var(--prem-text-muted);
+    font-size: 0.95rem;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.prem-deliverables {
+    margin-top: 30px;
+}
+
+.prem-section-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--prem-text-dark);
+    margin-bottom: 20px;
+}
+
+.prem-feature-item {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.prem-icon-box {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    background: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--prem-border-light);
+}
+
+.prem-item-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--prem-text-dark);
+}
+
+.prem-item-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--prem-text-muted);
+}
+
+.extra {
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.prem-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.prem-meta-box {
+    background: white;
+    border: 1.5px dashed var(--prem-border-dashed);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.prem-meta-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--prem-text-dark);
+    margin-bottom: 4px;
+}
+
+.prem-meta-value {
+    font-size: 0.9rem;
+    color: var(--prem-text-muted);
+}
+
+.prem-btn-main {
+    display: block;
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.prem-btn-main:hover {
+    background: var(--prem-btn-hover);
+    transform: translateY(-1px);
+}
+
+.prem-back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--prem-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+}

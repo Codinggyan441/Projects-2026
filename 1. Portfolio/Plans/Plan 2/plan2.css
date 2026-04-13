@@ -1,0 +1,171 @@
+:root {
+    --plan-primary: #000;
+    --plan-bg: #f8fafc;
+    --plan-text-main: #1e293b;
+    --plan-text-muted: #64748b;
+    --plan-white: #ffffff;
+    --hover-color: #313543;
+    --main-color: #3b82f6;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--plan-bg);
+    color: var(--plan-text-main);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.plan-detail-container {
+    background: var(--plan-white);
+    max-width: 600px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 40px;
+}
+
+.plan-detail-header {
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.plan-detail-badge {
+    background: #dbeafe;
+    color: var(--main-color);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.plan-detail-value-tag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f59e0b;
+    /* Amber for Best Value */
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    border-radius: 4px;
+}
+
+.plan-detail-price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 15px 0 5px;
+}
+
+.plan-detail-price span {
+    font-size: 1.2rem;
+    color: var(--plan-text-muted);
+    font-weight: 400;
+}
+
+.plan-detail-section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.plan-detail-feature-card {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-detail-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    background: var(--plan-white);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.plan-detail-info h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.plan-detail-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: var(--plan-text-muted);
+}
+
+.extra {
+    display: grid;
+    gap: 30px;
+}
+
+.plan-detail-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.plan-detail-meta-item {
+    border: 1px dashed #cbd5e1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.plan-detail-meta-item strong {
+    display: block;
+    color: var(--plan-primary);
+}
+
+.plan-detail-btn {
+    display: block;
+    width: 100%;
+    background: var(--plan-primary);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.plan-detail-btn:hover {
+    background: var(--hover-color);
+    transform: translateY(-1px);
+}
+
+.plan-detail-back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--plan-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.plan-detail-btn:hover {
+    background: var(--hover-color);
+}

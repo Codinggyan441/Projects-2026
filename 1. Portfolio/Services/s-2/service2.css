@@ -1,0 +1,9 @@
+.wd-feature {
+    border: 2px solid #065F46;
+}
+
+.wd-feature:hover {
+    background-color: #065F46;
+    color: var(--white);
+    transform: scale(1.05);
+}

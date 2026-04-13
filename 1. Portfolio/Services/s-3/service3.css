@@ -1,0 +1,9 @@
+.gd-feature {
+    border: 2px solid #78350F;
+}
+
+.gd-feature:hover {
+    background-color: #78350F;
+    color: var(--white);
+    transform: scale(1.05);
+}

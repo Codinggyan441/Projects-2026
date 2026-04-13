@@ -1,0 +1,9 @@
+.rd-feature {
+    border: 2px solid #064E3B;
+}
+
+.rd-feature:hover {
+    background-color: #064E3B;
+    color: #fff;
+    transform: scale(1.05);
+}
