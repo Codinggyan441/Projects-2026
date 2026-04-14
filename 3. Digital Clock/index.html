@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="aurora" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <main class="clock-card" role="main" aria-label="Digital clock">
+        <section class="top-bar">
+            <h1 class="title">Digital Clock</h1>
+            <div class="controls">
+                <button id="themeToggle" class="toggle-btn" type="button" aria-label="Toggle dark and light mode">🌙
+                    Dark</button>
+                <button id="formatToggle" class="toggle-btn" type="button"
+                    aria-label="Toggle 12 and 24 hour format">24H</button>
+            </div>
+        </section>
+
+        <section class="clock-wrap">
+            <div class="time" aria-live="polite">
+                <span id="hours" class="digit-group">00</span>
+                <span class="colon">:</span>
+                <span id="minutes" class="digit-group">00</span>
+                <span class="colon">:</span>
+                <span id="seconds" class="seconds-group">00</span>
+                <span id="ampm" class="ampm"></span>
+            </div>
+            <p id="dayName" class="day">Monday</p>
+            <p id="dateText" class="date">January 1, 2026</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
